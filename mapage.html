@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Intégration</title>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <style>
+        /* Styles personnalisés */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Début du code d'intégration Botpress -->
+    <script>
+      window.botpressWebChat.init({
+          composerPlaceholder: "Chat with bot",
+          botConversationDescription: "This chatbot was built surprisingly fast with Botpress",
+          botId: "5765244a-5288-4cfd-8494-4fe48b578519",
+          hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+          messagingUrl: "https://messaging.botpress.cloud",
+          clientId: "5765244a-5288-4cfd-8494-4fe48b578519",
+          webhookId: "d1e56ea1-c983-4898-9fdc-0a963509e44e",
+          lazySocket: true,
+          themeName: "prism",
+          frontendVersion: "v1",
+          showPoweredBy: true,
+          theme: "prism",
+          themeColor: "#2563eb",
+          allowedOrigins: []
+      });
+    </script>
+    <!-- Fin du code d'intégration Botpress -->
+</body>
+</html>
